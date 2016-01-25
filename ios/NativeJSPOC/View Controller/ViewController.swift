@@ -10,15 +10,16 @@ import Foundation
 
 class ViewController: UIViewController, RCTBridgeDelegate {
   
-  var viewControllerModule: ViewControllerModule!
+  var viewControllerModule: DataModule!
   @IBOutlet var nativeButton: UIButton!
   
   //MARK: UIViewController life cycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+        
     let bridge = RCTBridge(delegate: self, launchOptions: nil)
+
     let rootView = RCTRootView.init(bridge: bridge, moduleName: "NativeJSPOC", initialProperties: nil)
     
     self.view.insertReactSubview(rootView, atIndex: 0)
@@ -32,7 +33,7 @@ class ViewController: UIViewController, RCTBridgeDelegate {
   //MARK: RCTBridge delegate methods
   
   func extraModulesForBridge(bridge: RCTBridge!) -> [AnyObject]! {
-    self.viewControllerModule = ViewControllerModule()
+    self.viewControllerModule = DataModule()
     self.viewControllerModule.bridge = bridge
     return [self.viewControllerModule]
   }
@@ -44,7 +45,9 @@ class ViewController: UIViewController, RCTBridgeDelegate {
   //MARK: Action methods
   
   @IBAction func pressedNativeButton() {
-      self.viewControllerModule.pressedButton()
+    self.viewControllerModule.getData("someType") { (success: Bool) -> Void in
+        print("success " + String(success))
+    }
   }
   
 }

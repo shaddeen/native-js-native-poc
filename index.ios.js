@@ -4,7 +4,7 @@
  */
 'use strict';
 
-import { ViewControllerModule as NativeModule } from 'NativeModules';
+import { DataModule as NativeModule } from 'NativeModules';
 
 import React, {
   AppRegistry,
@@ -17,12 +17,12 @@ class NativeJSPOC extends Component {
 
   constructor() {
     super();
-    DeviceEventEmitter.addListener('pressedButton', (e: Event) => this.nativeButtonPressedResponder(e));
+    DeviceEventEmitter.addListener('getData', (e: Event) => this.nativeButtonPressedResponder(e));
   }
 
   nativeButtonPressedResponder (e: Event) {
     var selector = e.selector;
-    NativeModule.sendSomethingBack({selector: selector});
+    NativeModule.returnWithData({selector: selector});
   }
 
   render() {

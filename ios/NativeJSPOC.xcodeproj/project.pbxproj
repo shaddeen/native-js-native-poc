@@ -19,11 +19,13 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		736522511C5274E1009C6117 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736522501C5274E1009C6117 /* Model.swift */; };
+		736F23C31C524C0300E0C2CA /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736F23C21C524C0300E0C2CA /* ModelProtocol.swift */; };
 		73A48C9B1C4FE0CB00778251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A48C9A1C4FE0CB00778251 /* AppDelegate.swift */; };
 		73A48CA71C4FE2BA00778251 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A48CA61C4FE2BA00778251 /* ViewController.swift */; };
 		73A48CAA1C4FE41000778251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73A48CA91C4FE41000778251 /* Main.storyboard */; };
-		73A48CAC1C4FE4C600778251 /* ViewControllerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A48CAB1C4FE4C600778251 /* ViewControllerModule.swift */; };
-		73A48CAE1C4FE54C00778251 /* ViewControllerModuleBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A48CAD1C4FE54C00778251 /* ViewControllerModuleBridge.m */; };
+		73A48CAC1C4FE4C600778251 /* DataModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A48CAB1C4FE4C600778251 /* DataModule.swift */; };
+		73A48CAE1C4FE54C00778251 /* DataModuleBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A48CAD1C4FE54C00778251 /* DataModuleBridge.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -124,12 +126,14 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = NativeJSPOC/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NativeJSPOC/Info.plist; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		736522501C5274E1009C6117 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		736F23C21C524C0300E0C2CA /* ModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
 		73A48C991C4FE0CA00778251 /* NativeJSPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeJSPOC-Bridging-Header.h"; sourceTree = "<group>"; };
 		73A48C9A1C4FE0CB00778251 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73A48CA61C4FE2BA00778251 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73A48CA91C4FE41000778251 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		73A48CAB1C4FE4C600778251 /* ViewControllerModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerModule.swift; sourceTree = "<group>"; };
-		73A48CAD1C4FE54C00778251 /* ViewControllerModuleBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerModuleBridge.m; sourceTree = "<group>"; };
+		73A48CAB1C4FE4C600778251 /* DataModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModule.swift; sourceTree = "<group>"; };
+		73A48CAD1C4FE54C00778251 /* DataModuleBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModuleBridge.m; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -262,8 +266,10 @@
 			isa = PBXGroup;
 			children = (
 				73A48CA61C4FE2BA00778251 /* ViewController.swift */,
-				73A48CAB1C4FE4C600778251 /* ViewControllerModule.swift */,
-				73A48CAD1C4FE54C00778251 /* ViewControllerModuleBridge.m */,
+				73A48CAB1C4FE4C600778251 /* DataModule.swift */,
+				736F23C21C524C0300E0C2CA /* ModelProtocol.swift */,
+				736522501C5274E1009C6117 /* Model.swift */,
+				73A48CAD1C4FE54C00778251 /* DataModuleBridge.m */,
 			);
 			name = "View Controller";
 			path = "NativeJSPOC/View Controller";
@@ -563,9 +569,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				73A48C9B1C4FE0CB00778251 /* AppDelegate.swift in Sources */,
-				73A48CAE1C4FE54C00778251 /* ViewControllerModuleBridge.m in Sources */,
+				73A48CAE1C4FE54C00778251 /* DataModuleBridge.m in Sources */,
+				736F23C31C524C0300E0C2CA /* ModelProtocol.swift in Sources */,
+				736522511C5274E1009C6117 /* Model.swift in Sources */,
 				73A48CA71C4FE2BA00778251 /* ViewController.swift in Sources */,
-				73A48CAC1C4FE4C600778251 /* ViewControllerModule.swift in Sources */,
+				73A48CAC1C4FE4C600778251 /* DataModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
