@@ -4,6 +4,7 @@
  */
 'use strict';
 
+import DataModule from './DataModule';
 import { DataModule as NativeModule } from 'NativeModules';
 
 import React, {

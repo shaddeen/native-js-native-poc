@@ -23,9 +23,9 @@ class DataModule : NSObject {
   
   @objc func getData(dataType: String!, completion: ((Bool)->Void)!) {
     self.completion = completion
-    self.bridge.eventDispatcher.sendDeviceEventWithName("getData", body: ["dataType": dataType])
+//    self.bridge.eventDispatcher.sendDeviceEventWithName("getData", body: ["dataType": dataType])
     
-    //self.bridge.enqueueJSCall("NativeJSPOC.nativeButtonPressedResponder", args: [""])
+    self.bridge.enqueueJSCall("DataModule.getData", args: [""])
     //See ReactNativeEventEmitter.js
 
   }
