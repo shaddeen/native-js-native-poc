@@ -12,22 +12,15 @@ class ViewController: UIViewController, RCTBridgeDelegate {
   
   var viewControllerModule: DataModule!
   @IBOutlet var nativeButton: UIButton!
+  var bridge: RCTBridge!
   
   //MARK: UIViewController life cycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
         
-    let bridge = RCTBridge(delegate: self, launchOptions: nil)
-
-    let rootView = RCTRootView.init(bridge: bridge, moduleName: "NativeJSPOC", initialProperties: nil)
+    bridge = RCTBridge(delegate: self, launchOptions: nil)
     
-    self.view.insertReactSubview(rootView, atIndex: 0)
-    
-    rootView.translatesAutoresizingMaskIntoConstraints = false
-    self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[subview]-0-|", options: NSLayoutFormatOptions.DirectionLeadingToTrailing, metrics:nil, views:["subview":rootView]))
-    self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[subview]-0-|", options: NSLayoutFormatOptions.DirectionLeadingToTrailing, metrics:nil, views:["subview":rootView]))
-
   }
   
   //MARK: RCTBridge delegate methods
@@ -45,8 +38,17 @@ class ViewController: UIViewController, RCTBridgeDelegate {
   //MARK: Action methods
   
   @IBAction func pressedNativeButton() {
-    self.viewControllerModule.getData("someType") { (success: Bool) -> Void in
-        print("success " + String(success))
+    self.viewControllerModule.getData("someType") { () -> Void in
+      print("success 1")
+    }
+    self.viewControllerModule.getData("someType") { () -> Void in
+      print("success 2")
+    }
+    self.viewControllerModule.getData("someType") { () -> Void in
+      print("success 3")
+    }
+    self.viewControllerModule.getData("someType") { () -> Void in
+      print("success 4")
     }
   }
   
