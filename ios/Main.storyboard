@@ -39,9 +39,6 @@
                             <constraint firstItem="vBy-17-7Zs" firstAttribute="centerX" secondItem="zhb-My-pGx" secondAttribute="centerX" id="df2-ch-DZG"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="nativeButton" destination="vBy-17-7Zs" id="8Nm-UO-9G7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZc-5s-yvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

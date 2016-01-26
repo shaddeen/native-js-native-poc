@@ -20,6 +20,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		736522511C5274E1009C6117 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736522501C5274E1009C6117 /* Model.swift */; };
+		736522DF1C578076009C6117 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736522DE1C578076009C6117 /* DataService.swift */; };
 		736F23C31C524C0300E0C2CA /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736F23C21C524C0300E0C2CA /* ModelProtocol.swift */; };
 		73A48C9B1C4FE0CB00778251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A48C9A1C4FE0CB00778251 /* AppDelegate.swift */; };
 		73A48CA71C4FE2BA00778251 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A48CA61C4FE2BA00778251 /* ViewController.swift */; };
@@ -127,6 +128,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NativeJSPOC/Info.plist; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		736522501C5274E1009C6117 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		736522DE1C578076009C6117 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		736F23C21C524C0300E0C2CA /* ModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
 		73A48C991C4FE0CA00778251 /* NativeJSPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeJSPOC-Bridging-Header.h"; sourceTree = "<group>"; };
 		73A48C9A1C4FE0CB00778251 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				73A48CA61C4FE2BA00778251 /* ViewController.swift */,
+				736522DE1C578076009C6117 /* DataService.swift */,
 				73A48CAB1C4FE4C600778251 /* DataModule.swift */,
 				736F23C21C524C0300E0C2CA /* ModelProtocol.swift */,
 				736522501C5274E1009C6117 /* Model.swift */,
@@ -569,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73A48C9B1C4FE0CB00778251 /* AppDelegate.swift in Sources */,
+				736522DF1C578076009C6117 /* DataService.swift in Sources */,
 				73A48CAE1C4FE54C00778251 /* DataModuleBridge.m in Sources */,
 				736F23C31C524C0300E0C2CA /* ModelProtocol.swift in Sources */,
 				736522511C5274E1009C6117 /* Model.swift in Sources */,
